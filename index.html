@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weapons of Mass Distortion</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="bg" aria-hidden="true"></div>
+    <main class="app">
+      <header class="hero">
+        <img src="images/logo.png" alt="Weapons of Mass Distortion" class="logo" />
+        <div class="hero-text">
+          <h1>Weapons of Mass Distortion</h1>
+          <p>Modern mixing, mastering, and full production for artists who demand impact.</p>
+        </div>
+      </header>
+
+      <section class="viewport" aria-live="polite">
+        <div class="glass">
+          <div class="panel active" id="panel-home" role="tabpanel">
+            <h2>Studio</h2>
+            <p>
+              Precision sound design and sonic identity built for today’s streaming-first world.
+              Explore mixes, shop merch, or request services without ever leaving this space.
+            </p>
+            <div class="stats">
+              <div>
+                <span>Mixing</span>
+                <strong>Custom Rates</strong>
+              </div>
+              <div>
+                <span>Mastering</span>
+                <strong>Transparent Pricing</strong>
+              </div>
+              <div>
+                <span>Production</span>
+                <strong>Full-Service</strong>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel" id="panel-mix" role="tabpanel">
+            <h2>Mix Portfolio</h2>
+            <div class="embed">
+              <iframe
+                width="100%"
+                height="450"
+                scrolling="no"
+                frameborder="no"
+                allow="autoplay"
+                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/soundcloud%253Aplaylists%253A1664566855&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+              ></iframe>
+              <div class="embed-caption">
+                <a
+                  href="https://soundcloud.com/aj-dodig"
+                  title="Weapons of Mass Distortion"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Weapons of Mass Distortion
+                </a>
+                ·
+                <a
+                  href="https://soundcloud.com/aj-dodig/sets/austin-dodig-mix-portfolio"
+                  title="Mix Portfolio"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Mix Portfolio
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel" id="panel-merch" role="tabpanel">
+            <h2>Merch</h2>
+            <p>
+              Printful blocks direct embedding, so here’s a curated on‑brand merch view with direct
+              product links.
+            </p>
+            <div class="merch-grid">
+              <article class="merch-card">
+                <img
+                  class="merch-image"
+                  src="https://cdn.printful.me/t/quick-stores/variants/w339/12562837696d038d95d69__825"
+                  alt="Weapons of Mass Distortion T-Shirt"
+                  loading="lazy"
+                />
+                <div class="merch-info">
+                  <h3>Weapons of Mass Distortion T‑Shirt</h3>
+                  <p>Core logo tee. Limited run.</p>
+                  <a
+                    class="cta"
+                    href="https://weapons-of-mass-distortion.printful.me/product/weapons-of-mass-distortion-t-shirt"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    View product
+                  </a>
+                </div>
+              </article>
+              <article class="merch-card">
+                <img
+                  class="merch-image"
+                  src="https://cdn.printful.me/t/quick-stores/variants/w339/12563643696d0db9de41c__825"
+                  alt="Weapons of Mass Distortion Hat"
+                  loading="lazy"
+                />
+                <div class="merch-info">
+                  <h3>Weapons of Mass Distortion Hat</h3>
+                  <p>Structured cap with embroidered logo.</p>
+                  <a
+                    class="cta"
+                    href="https://weapons-of-mass-distortion.printful.me/product/weapons-of-mass-distortion-hat"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    View product
+                  </a>
+                </div>
+              </article>
+              <article class="merch-card">
+                <img
+                  class="merch-image"
+                  src="https://cdn.printful.me/t/quick-stores/variants/w339/12562983696d05f037ea2__825"
+                  alt="Weapons of Mass Distortion Black Glossy Mug"
+                  loading="lazy"
+                />
+                <div class="merch-info">
+                  <h3>Black Glossy Mug</h3>
+                  <p>Studio‑ready coffee companion.</p>
+                  <a
+                    class="cta"
+                    href="https://weapons-of-mass-distortion.printful.me/product/weapons-of-mass-distortion-black-glossy-mug"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    View product
+                  </a>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="panel" id="panel-request" role="tabpanel">
+            <h2>Request Services</h2>
+            <p>
+              Tell us about your project. Rates are customized based on scope, deliverables, and
+              timelines.
+            </p>
+            <form class="request-form" action="mailto:hello@weaponsofmassdistortion.com" method="post" enctype="text/plain">
+              <div class="grid">
+                <label>
+                  Name
+                  <input type="text" name="name" placeholder="Your name" required />
+                </label>
+                <label>
+                  Email
+                  <input type="email" name="email" placeholder="you@email.com" required />
+                </label>
+              </div>
+              <label>
+                Service
+                <select name="service" required>
+                  <option value="">Select a service</option>
+                  <option value="Mixing">Mixing</option>
+                  <option value="Mastering">Mastering</option>
+                  <option value="Full Production">Full Production</option>
+                </select>
+              </label>
+              <label>
+                Project details
+                <textarea name="details" rows="5" placeholder="Describe your goals, track count, deadlines, and references." required></textarea>
+              </label>
+              <button type="submit">Send Request</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <nav class="navbar" role="tablist" aria-label="Primary">
+        <button class="nav-btn active" data-target="home" role="tab" aria-controls="panel-home">
+          Home
+        </button>
+        <button class="nav-btn" data-target="mix" role="tab" aria-controls="panel-mix">
+          Mix Portfolio
+        </button>
+        <button class="nav-btn" data-target="merch" role="tab" aria-controls="panel-merch">
+          Merch
+        </button>
+        <button class="nav-btn" data-target="request" role="tab" aria-controls="panel-request">
+          Request Services
+        </button>
+      </nav>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
